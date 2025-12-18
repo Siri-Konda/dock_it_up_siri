@@ -1,4 +1,3 @@
-
 Assignment 1 — Build & Run a Personalized Web Server Container
 
 ## Overview
@@ -29,21 +28,24 @@ assignment-1/
 ## Setup & Execution Steps
 
 ### 1. Build Web Image
+(Here, we are trying to build an image with the **tag** (-t), aka name about-duck.)
 
 Run this inside the project directory:
 
 ```bash
 docker build -t about-duck .
 ```
-Here, we are trying to build an image with the **tag** (-t), aka name about-duck.
 ---
 
 ### 2. Run Container
+(-d is used to run the container in the background, site1 is the name of the container (usually a container is stored as a sequence of numbers and letters, eg. 23454944e86e402eb4b39ce0d619e58be4ead7eaef1d8ce63ef745ea25d06587). 9090:8000 is the port we connect to.)
+
+Run this: 
 
 ```bash
 docker run -d --name site1 -p 9090:8000 about-duck
 ```
--d is used to run the container in the background, site1 is the name of the container (usually a container is stored as a sequence of numbers and letters, eg. 23454944e86e402eb4b39ce0d619e58be4ead7eaef1d8ce63ef745ea25d06587). 9090:8000 is the port we connect to.
+
 ---
 
 ### 3. Browser Test (optional)
@@ -66,4 +68,5 @@ docker rm site1
 ```
 
 ---
+
 
