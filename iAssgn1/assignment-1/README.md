@@ -12,6 +12,7 @@ The goal is to show:
 
 Here is a video of the website running: 
 https://drive.google.com/file/d/1690u2M85QDTmtQMTYVKcRrjHkjegJCK4/view?usp=drive_link
+
 ---
 ## Project Structure
 
