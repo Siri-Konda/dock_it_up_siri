@@ -12,16 +12,22 @@ The goal is to show:
 * Connect them using Docker networking
 
 ---
+## Video link
+
+Here is a video of the entire process: 
+https://drive.google.com/file/d/1nOBjpNHXFSp70cF9J5drv8w1cHWva6-h/view?usp=drive_link
+
+---
 
 ## Project Structure
 
 ```
 assignment-2/
+├── README.md
 ├── Dockerfile
 ├── index.html
 ├── api.html
-├── default.conf
-└── README.md
+└── default.conf
 ```
 
 ---
@@ -60,7 +66,7 @@ docker run -d --name api --network webnet hashicorp/http-echo -text="Hello from 
 docker run -d --name web --network webnet -p 8080:80 web-image
 ```
 
-### 5. Test that the web container can reach the API container using container name:
+### 5. Test whether the web container can reach the API container using the container name:
 
 Run this code:  
 
