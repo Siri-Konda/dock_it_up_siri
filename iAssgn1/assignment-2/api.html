@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f8f0ff; margin-top: 50px; }
+        h1 { color: #7e49ba; }
+        p { color: #333; }
+    </style>
+<head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api node</title>
+</head>
+<body>
+    <p>Click the button to fetch data from the API container.</p>
+
+  <button onclick="callApi()">Call API</button>
+
+  <p id="response"></p>
+
+  <script>
+    function callApi() {
+      fetch('/api')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('response').innerText = data;
+        })
+        .catch(error => {
+          document.getElementById('response').innerText = 'Error calling API';
+        });
+    }
+  </script>
+</body>
+</html>
